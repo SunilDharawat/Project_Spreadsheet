@@ -1,6 +1,7 @@
 import React from "react";
 import SpreadsheetHeader from "./components/SpreadsheetHeader";
 import SpreadsheetToolbar from "./components/SpreadsheetToolbar";
+import SpreadsheetTable from "./components/SpreadsheetTable";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     <div>
       <SpreadsheetHeader />
       <SpreadsheetToolbar />
+      <SpreadsheetTable />
     </div>
   );
 }
