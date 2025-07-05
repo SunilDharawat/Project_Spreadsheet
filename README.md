@@ -1,12 +1,84 @@
-# React + Vite
+# 🚀 Project Spreadsheet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Prototype for the requiement of spreadsheet type desing using the ReactJS.
+"Here we design a prototype which show exact the spreadsheet using the best components like Shadcn UI or Tanstack React Table Elements."
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+## Project Link - (https://project-spreadsheet.netlify.app/)
 
-## Expanding the ESLint configuration
+## 📸 Demo
+![App Screenshot](https://github.com/user-attachments/assets/e42cbf24-3e44-4a34-883b-6807487237b9)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Folder Structure
+
+Project_Spreadsheet/
+├── public/
+│ ├── favicon-icon.png
+│ └── vite.svg
+├── src/
+│ ├── assets/
+│ ├── components/
+│ │ └── ui/
+│ │ ├── avatar.jsx
+│ │ ├── badge.jsx
+│ │ ├── breadcrumb.jsx
+│ │ ├── button.jsx
+│ │ ├── card.jsx
+│ │ ├── dropdown-menu.jsx
+│ │ ├── input.jsx
+│ │ ├── scroll-area.jsx
+│ │ ├── table.jsx
+│ │ ├── tabs.jsx
+│ │ ├── SpreadsheetBottomNav.jsx
+│ │ ├── SpreadsheetHeader.jsx
+│ │ ├── SpreadsheetTable.jsx
+│ │ └── SpreadsheetToolbar.jsx
+│ ├── App.css
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+├── .gitignore
+├── components.json
+├── eslint.config.js
+├── index.html
+├── jsconfig.json
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+
+
+
+---
+
+## 💡 Features
+
+- Spreadsheet-style table layout using TanStack Table
+- Modular UI with reusable components (buttons, dropdowns, tabs, etc.)
+- Bottom navigation and toolbar for quick actions
+- Responsive design with Tailwind CSS
+- Clean and modern UI built with Shadcn UI components
+
+---
+
+## 🧪 Tech Stack
+
+- **Frontend**: React, Vite
+- **Styling**: Tailwind CSS
+- **UI Library**: Shadcn UI
+- **Table Handling**: TanStack React Table (v8)
+- **Icons**: Lucide React
+---
+
+## ⚙️ Getting Started
+
+### 📦 Install Dependencies
+
+```bash
+npm install
+
+# Start the development server
+npm run dev
