@@ -44,6 +44,9 @@ const editableCell = () => ({
       type="text"
       defaultValue={info.getValue() || ""}
       className="w-full px-2 py-1 text-sm bg-transparent outline-none focus:bg-blue-50 focus:ring-1 focus:ring-blue-200"
+      onClick={(e) => e.stopPropagation()}
+      onFocus={(e) => e.stopPropagation()}
+      onChange={(e) => console.log(`${info.column.id}:`, e.target.value)}
     />
   ),
 });
@@ -53,6 +56,9 @@ const urlCell = (info) => (
     type="text"
     defaultValue={info.getValue() || ""}
     className="w-full px-2 py-1 text-sm text-blue-600 underline bg-transparent outline-none focus:bg-blue-50 focus:ring-1 focus:ring-blue-200"
+    onClick={(e) => e.stopPropagation()}
+    onFocus={(e) => e.stopPropagation()}
+    onChange={(e) => console.log(`${info.column.id}:`, e.target.value)}
   />
 );
 
@@ -135,7 +141,7 @@ const data = [
   })),
 ];
 
-export default function JobTableUI() {
+export default function SpreadsheetTable() {
   const [selectedColumn, setSelectedColumn] = useState(null);
 
   const handleColumnClick = (columnId) => {
@@ -146,8 +152,8 @@ export default function JobTableUI() {
     {
       id: "q3-overview",
       header: () => (
-        <div className="flex items-center gap-2 text-sm font-semibold text-blue-600">
-          <span className="text-blue-500">↺</span>
+        <div className="bg-gray-200 text-blue-700 px-3 py-1 font-medium text-sm flex items-center gap-2">
+          <span className="text-blue-700">↺</span>
           Q3 Financial Overview
           <ChevronDown className="h-4 w-4 text-gray-400" />
         </div>
@@ -259,7 +265,7 @@ export default function JobTableUI() {
         columnHelper.accessor("estValue", {
           header: "Est. Value",
           size: 120,
-          ...editableCell(), // Your editable cell logic
+          ...editableCell(),
         }),
       ],
     },
@@ -292,7 +298,7 @@ export default function JobTableUI() {
   });
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white mb-10">
       <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
         <table className="w-full border-separate border-spacing-0">
           <thead>
