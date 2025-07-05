@@ -58,7 +58,10 @@ const SpreadsheetHeader = () => {
           </Breadcrumb>
 
           {/* three dot menu to shows more options */}
-          <button className="ml-2 p-1 hover:bg-gray-100 rounded">
+          <button
+            className="ml-2 p-1 hover:bg-gray-100 rounded"
+            onClick={() => console.log("More options button clicked")}
+          >
             <MoreHorizontal className="w-4 h-4 text-gray-600" />
           </button>
         </div>
@@ -72,12 +75,16 @@ const SpreadsheetHeader = () => {
               type="text"
               placeholder="Search within sheet..."
               className="pl-10 pr-4 py-2 w-full bg-gray-50 border-0 rounded-lg text-sm focus:outline-none focus:bg-white focus:shadow-sm transition-all"
+              onChange={(e) => console.log("Search input:", e.target.value)}
             />
           </div>
 
           {/* Notification bell icon to show the notification for a user*/}
           <div className="relative">
-            <button className="p-2 hover:bg-gray-100 rounded-full">
+            <button
+              className="p-2 hover:bg-gray-100 rounded-full"
+              onClick={() => console.log("Notification bell clicked")}
+            >
               <Bell className="w-5 h-5 text-gray-600" />
             </button>
             <div className="absolute -top-1 -right-1 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">

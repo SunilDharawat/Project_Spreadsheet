@@ -23,6 +23,7 @@ const SpreadsheetToolbar = () => {
           <Button
             variant="ghost"
             className="cursor-pointer text-sm px-2 py-1.5 whitespace-nowrap"
+            onClick={() => console.log("Toolbar clicked")}
           >
             Tool bar
             <ChevronsRight className="ml-1 w-4 h-4" />
@@ -33,6 +34,7 @@ const SpreadsheetToolbar = () => {
           <Button
             variant="ghost"
             className="cursor-pointer text-sm px-2 sm:px-3 py-1.5 whitespace-nowrap"
+            onClick={() => console.log("Hide fields clicked")}
           >
             <EyeOff className="w-4 h-4 mr-1" />
             <span className="hidden sm:inline">Hide fields</span>
@@ -41,6 +43,7 @@ const SpreadsheetToolbar = () => {
           <Button
             variant="ghost"
             className="cursor-pointer text-sm px-2 sm:px-3 py-1.5 whitespace-nowrap"
+            onClick={() => console.log("Sort clicked")}
           >
             <ArrowUpDown className="w-4 h-4 mr-1" />
             <span className="hidden sm:inline">Sort</span>
@@ -49,6 +52,7 @@ const SpreadsheetToolbar = () => {
           <Button
             variant="ghost"
             className="cursor-pointer text-sm px-2 sm:px-3 py-1.5 whitespace-nowrap"
+            onClick={() => console.log("Filter clicked")}
           >
             <Filter className="w-4 h-4 mr-1" />
             <span className="hidden sm:inline">Filter</span>
@@ -57,6 +61,7 @@ const SpreadsheetToolbar = () => {
           <Button
             variant="ghost"
             className="cursor-pointer text-sm px-2 sm:px-3 py-1.5 whitespace-nowrap"
+            onClick={() => console.log("Cell view clicked")}
           >
             <Grid3X3 className="w-4 h-4 mr-1" />
             <span className="hidden md:inline">Cell view</span>
@@ -68,6 +73,7 @@ const SpreadsheetToolbar = () => {
           <Button
             variant="outline"
             className="text-sm whitespace-nowrap cursor-pointer"
+            onClick={() => console.log("Import clicked")}
           >
             <Download className="w-4 h-4 mr-1" />
             <span className="hidden lg:inline">Import</span>
@@ -76,6 +82,7 @@ const SpreadsheetToolbar = () => {
           <Button
             variant="outline"
             className="text-sm whitespace-nowrap cursor-pointer"
+            onClick={() => console.log("Export clicked")}
           >
             <Upload className="w-4 h-4 mr-1" />
             <span className="hidden lg:inline">Export</span>
@@ -84,6 +91,7 @@ const SpreadsheetToolbar = () => {
           <Button
             variant="outline"
             className="text-sm whitespace-nowrap cursor-pointer "
+            onClick={() => console.log("Share clicked")}
           >
             <SquareArrowOutUpRight className="w-4 h-4 mr-1" />
             <span className="hidden sm:inline">Share</span>
@@ -92,6 +100,7 @@ const SpreadsheetToolbar = () => {
           <Button
             variant="default"
             className="bg-green-600 hover:bg-green-700 text-white text-sm cursor-pointer  whitespace-nowrap"
+            onClick={() => console.log("New Action clicked")}
           >
             <Plus className="w-4 h-4 mr-1" />
             <span className="hidden sm:inline">New Action</span>
